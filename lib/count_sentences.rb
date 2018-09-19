@@ -17,7 +17,7 @@ class String
   def count_sentences
     sum = 0
  #   self.split(/[.?!]/).count(end_with?([.?!]))
-    self.split(/[.?!]/).each do |string| 
+  #  self.split(/[.?!]/).each do |string| having converted the string into an array, is it possible to simply count how many elements end in ".", "?" or "!"?
       if string != "" 
         sum += 1
       end 
