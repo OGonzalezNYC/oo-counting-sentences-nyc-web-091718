@@ -16,12 +16,12 @@ class String
 
   def count_sentences
     sum = 0
-    self.split(/[.?!]/).count(end_with?([.?!]))
-    # self.split(/[.?!]/).each do |string| 
-    #   if string != "" 
-    #     sum += 1
-    #   end 
-    # end 
+ #   self.split(/[.?!]/).count(end_with?([.?!]))
+    self.split(/[.?!]/).each do |string| 
+      if string != "" 
+        sum += 1
+      end 
+    end 
     sum 
   end
 end
