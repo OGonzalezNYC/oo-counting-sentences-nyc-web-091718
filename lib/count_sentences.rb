@@ -15,15 +15,13 @@ class String
   end
 
   def count_sentences
-  # self.count(". ") + self.count("! ") + self.count("? ") + 1
     sum = 0
-    self.split(/[.?!]/).each do |string| 
-      if string != "" 
-        sum += 1
-      end 
-       
-    end 
+    self.split(/[.?!]/).count(end_with?([.?!]))
+    # self.split(/[.?!]/).each do |string| 
+    #   if string != "" 
+    #     sum += 1
+    #   end 
+    # end 
     sum 
- #   binding.pry
   end
 end
